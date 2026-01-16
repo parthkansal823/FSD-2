@@ -15,10 +15,11 @@ function Home() {
         }}
       >
         <Container maxWidth="md">
-          <Stack spacing={1.5} alignItems="center" textAlign="center">
-            <RestaurantIcon sx={{ fontSize: 60 }} />
-            <Typography variant="h3" fontWeight="bold">PIND & SPICE</Typography>
-            <Typography>Authentic Pure Veg Punjabi Restaurant</Typography>
+          <Stack spacing={3} alignItems="center" textAlign="center">
+            <RestaurantIcon sx={{ fontSize: 70 }} />
+
+            <Typography variant="h2" fontWeight="bold">PIND & SPICE</Typography>
+            <Typography variant="h6">Authentic Pure Veg Punjabi Restaurant</Typography>
 
             <Stack
               direction={{ xs: "column", sm: "row" }}
