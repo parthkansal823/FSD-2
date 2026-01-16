@@ -1,5 +1,5 @@
-# [Full Stack 2 Course (Semester 6)](https://github.com/parthkansal823/FSD-2)
-### Parth Kansal (23BIS70035) -- <i>AP</i> -- Locked
+# [<i>AP</i> Full Stack 2 Course (Semester 6)](https://github.com/parthkansal823/FSD-2)
+### Parth Kansal (23BIS70035) -- Locked
 ### List of experiments
 
 - Experiment No: 1:Modern Front-End Architecture & SPA Concepts --> [Experiment-1](https://23bis70035-experiment-1.netlify.app/)
@@ -19,5 +19,6 @@
 - Experiment No: 15:Application Scaling & Monitoring
 
 <b>Link to OneDrive ASAP</b>
+
 
 
