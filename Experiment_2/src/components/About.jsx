@@ -12,18 +12,19 @@ function About() {
           <Stack spacing={2} alignItems="center" textAlign="center">
             <RestaurantIcon sx={{ fontSize: 50, color: "#7b1c1c" }} />
             <Typography variant="h3" fontWeight="bold">About PIND & SPICE</Typography>
-            <Typography color="text.secondary">Authentic Punjabi Flavors • Pure Vegetarian • Fresh Ingredients</Typography>
+            <Typography>Authentic Punjabi Flavors • Pure Vegetarian • Fresh Ingredients</Typography>
           </Stack>
         </Container>
       </Box>
 
       <Container maxWidth="md">
         <Typography textAlign="center" sx={{ mb: 5 }}>
-          PIND & SPICE is a pure vegetarian Punjabi restaurant located on Kharar Road, Mohali. We bring the true taste of Punjab using traditional recipes and fresh, high-quality ingredients in a hygienic and welcoming environment.
+          PIND & SPICE is a pure vegetarian Punjabi restaurant located on Kharar Road, Mohali. 
+          We bring the true taste of Punjab using traditional recipes and fresh, high-quality ingredients in a hygienic and welcoming environment.
         </Typography>
 
         <Grid container spacing={3} justifyContent="center">
-          <Grid item xs={4}>
+          <Grid item xs={3}>
             <Card>
               <CardContent>
                 <Stack direction="row" spacing={2} alignItems="center">
@@ -35,7 +36,7 @@ function About() {
             </Card>
           </Grid>
 
-          <Grid item xs={4}>
+          <Grid item xs={3}>
             <Card>
               <CardContent>
                 <Stack direction="row" spacing={2} alignItems="center">
@@ -47,7 +48,7 @@ function About() {
             </Card>
           </Grid>
 
-          <Grid item xs={4}>
+          <Grid item xs={3}>
             <Card>
               <CardContent>
                 <Stack direction="row" spacing={2} alignItems="center">
