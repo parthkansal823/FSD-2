@@ -18,7 +18,4 @@
 - Experiment No: 14:Containerization & Cloud Deployment
 - Experiment No: 15:Application Scaling & Monitoring
 
-<b>Link to OneDrive ASAP</b>
-
-
-
+<b>Link to OneDrive: [Link](https://1drv.ms/f/c/20701e171975a7df/IgCrsS9FqIfET6OgtBfTcEi8AYgRQB_FffnsUKbHTwQ7GHc)</b>
