@@ -5,7 +5,7 @@ import LocalDiningIcon from "@mui/icons-material/LocalDining";
 
 function Home() {
   return (
-    <Box sx={{background: "#b71c1c", color: "white",py: { xs: 6, md: 10 }}}>
+    <Box sx={{background: "#7b1c1c", color: "white",py: { xs: 6, md: 10 }}}>
       <Container>
         <Stack spacing={1} alignItems="center" textAlign="center">
           <RestaurantIcon sx={{ fontSize: 70 }} />
