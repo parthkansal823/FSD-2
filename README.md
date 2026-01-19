@@ -1,6 +1,6 @@
 # [<i>AP</i> Full Stack 2 Course (Semester 6)](https://github.com/parthkansal823/FSD-2)
 ### Parth Kansal (23BIS70035)
-Link to Obedrive (All Semester 6 Notes) --> [Click here](https://1drv.ms/f/c/20701e171975a7df/IgCrsS9FqIfET6OgtBfTcEi8AYgRQB_FffnsUKbHTwQ7GHc)
+Link to Onedrive (Semester 6 Notes) --> [Click here](https://1drv.ms/f/c/20701e171975a7df/IgCrsS9FqIfET6OgtBfTcEi8AYgRQB_FffnsUKbHTwQ7GHc)
 
 ## List of Experiments
 
