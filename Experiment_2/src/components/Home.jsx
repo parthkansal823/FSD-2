@@ -4,6 +4,7 @@ import RestaurantIcon from "@mui/icons-material/Restaurant";
 import LocalDiningIcon from "@mui/icons-material/LocalDining";
 
 function Home() {
+  const zomato = "https://www.zomato.com/chandigarh/pind-spice-kharar-road-mohali"
   return (
     <Box sx={{background: "#7b1c1c", color: "white",py: { xs: 6, md: 10 }}}>
       <Container>
@@ -37,9 +38,9 @@ function Home() {
                   }
                 }}
               >
-                <MenuItem value="" disabled>Order Online</MenuItem>
+                <MenuItem value={zomato} disabled>Order Online</MenuItem>
                 <MenuItem value="https://www.swiggy.com/city/chandigarh/pind-and-spice-greater-mohali-rest1279371">Swiggy</MenuItem>
-                <MenuItem value="https://www.zomato.com/chandigarh/pind-spice-kharar-road-mohali">Zomato</MenuItem>
+                <MenuItem value="">Zomato</MenuItem>
               </Select>
             </FormControl>
           </Stack>
