@@ -1,14 +1,14 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import ParentCounter from './components/CounterParent.jsx'
+import CounterReduxParent from "./components/Redux/CounterGlobalReduxParent";
+
 function App() {
   return (
-    <>
-      <ParentCounter/>
-    </>
-  )
+    <div>
+      <h2>Experiment 4 : State Management using Redux</h2>
+
+      <CounterReduxParent cno="Counter 1" />
+      <CounterReduxParent cno="Counter 2" />
+    </div>
+  );
 }
 
-export default App
+export default App;
