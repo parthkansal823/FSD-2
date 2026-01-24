@@ -10,6 +10,7 @@ export default function Contact() {
 
       <Select value={city} onChange={(e) => setCity(e.target.value)} displayEmpty>
         <MenuItem value="">Select City</MenuItem>
+        <MenuItem value="mumbai">Mambai</MenuItem>
         <MenuItem value="delhi">Delhi</MenuItem>
         <MenuItem value="chandigarh">Chandigarh</MenuItem>
       </Select>

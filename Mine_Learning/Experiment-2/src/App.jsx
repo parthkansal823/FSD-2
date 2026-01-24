@@ -6,9 +6,7 @@ import SinglePageApp from './components/Spa';
 
 function App() {
   return (
-    <>
       <SinglePageApp/>
-    </>
   )
 }
 
