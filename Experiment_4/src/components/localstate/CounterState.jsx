@@ -1,6 +1,6 @@
 import { useState } from "react"; 
 
-export default function LocalCounter() {
+export default function LocalCounter(props) {
   const [count, setCount] = useState(0);
 
   // Event handler functions for click Event
@@ -9,17 +9,10 @@ export default function LocalCounter() {
 
   return (
     <div>
+      <h3>{props.cno} : Local State Count: {count}</h3>
 
-      <h3>Local Count: {count}</h3>
-      {/* Binding event handlers to buttons  */}
-      <button onClick={increaseCount}>
-        Increase
-      </button>
-
-      <button onClick={decreaseCount}>
-        Decrease
-      </button>
-
+      <button onClick={increaseCount}>Increase</button>
+      <button onClick={decreaseCount}>Decrease</button>
     </div>
   );
 }

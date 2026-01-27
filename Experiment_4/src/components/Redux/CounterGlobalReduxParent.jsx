@@ -8,13 +8,8 @@ export default function CounterReduxParent(props) {
     <div>
       <h3>{props.cno} : Global State (Redux) Count: {count}</h3>
 
-      <button onClick={() => dispatch({ type: "INCREMENT" })}>
-        Increase
-      </button>
-
-      <button onClick={() => dispatch({ type: "DECREMENT" })}>
-        Decrease
-      </button>
+      <button onClick={() => dispatch({ type: "INCREMENT" })}>Increase</button>
+      <button onClick={() => dispatch({ type: "DECREMENT" })}>Decrease</button>
     </div>
   );
 }
