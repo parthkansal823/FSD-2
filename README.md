@@ -7,9 +7,9 @@ Link to Onedrive (Semester 6 Notes) --> [Click here](https://1drv.ms/f/c/20701e1
 - **Experiment No. 1:** Create a basic SPA using modern frontend framework --> [Experiment-1](https://23bis70035-experiment-1.netlify.app/)
 - **Experiment No. 2:** Design UI using component libraries (Material UI / Bootstrap) --> [Experiment-2](https://23bis70035-experiment-2.netlify.app/)
 - **Experiment No. 3:** Implement routing in SPA  --> [Experiment-3](https://23bis70035-experiment-3.netlify.app/)
-- **Experiment No. 4:** Implement state management using Redux / Context API  
-- **Experiment No. 5:** Optimize frontend performance using lazy loading  
-- **Experiment No. 6:** Handle forms and validations in frontend  
+- **Experiment No. 4:** Implement state management using Redux / Context API --> [Experiment-4](https://23bis70035-experiment-4.netlify.app/)
+- **Experiment No. 5:** Optimize frontend performance using lazy loading  --> [Experiment-5](https://23bis70035-experiment-5.netlify.app/)
+- **Experiment No. 6:** Handle forms and validations in frontend  --> [Experiment-6](https://23bis70035-experiment-6.netlify.app/)
 - **Experiment No. 7:** Analyze frontend performance using browser dev tools  
 - **Experiment No. 8:** Develop RESTful APIs using backend framework  
 - **Experiment No. 9:** Implement authentication using JWT  
@@ -42,3 +42,4 @@ Link to Onedrive (Semester 6 Notes) --> [Click here](https://1drv.ms/f/c/20701e1
 - **Lecture No. 13:** DevOps Concepts & CI/CD Pipeline  
 - **Lecture No. 14:** Containerization & Cloud Deployment  
 - **Lecture No. 15:** Application Scaling & Monitoring  
+
