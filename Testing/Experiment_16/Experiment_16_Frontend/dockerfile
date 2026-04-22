@@ -1,0 +1,15 @@
+
+# base docker image from dockerhub,
+# we are using node image as our application is based on nodejs
+FROM node:20
+
+
+WORKDIR /app
+
+COPY . .
+
+RUN npm install
+RUN npm run build
+
+# expose the port on which our application will run
+CMD ["npm", "run", "preview"]

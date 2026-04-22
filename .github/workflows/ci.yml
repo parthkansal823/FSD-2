@@ -1,0 +1,92 @@
+name: Experiment 16 Tests
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+jobs:
+
+  backend-test:
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: Testing/Experiment_16/Experiment_16_Backend
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          python -m venv venv
+          ./venv/bin/pip install -r requirements.txt
+
+      - name: Run backend tests
+        run: ./venv/bin/pytest
+
+
+  frontend-test:
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: Testing/Experiment_16/Experiment_16_Frontend
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run frontend tests
+        run: npm run test -- --run
+
+
+  docker:
+    runs-on: ubuntu-latest
+    needs: [backend-test, frontend-test]
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Log in to Docker Hub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+
+      - name: Build and push backend Docker image
+        uses: docker/build-push-action@v5
+        with:
+          context: Testing/Experiment_16/Experiment_16_Backend
+          push: true
+          tags: |
+            ${{ secrets.DOCKER_USERNAME }}/fsd2-experiment16-backend:latest
+            ${{ secrets.DOCKER_USERNAME }}/fsd2-experiment16-backend:${{ github.sha }}
+
+      - name: Build and push frontend Docker image
+        uses: docker/build-push-action@v5
+        with:
+          context: Testing/Experiment_16/Experiment_16_Frontend
+          file: Testing/Experiment_16/Experiment_16_Frontend/Dockerfile
+          push: true
+          tags: |
+            ${{ secrets.DOCKER_USERNAME }}/fsd2-experiment16-frontend:latest
+            ${{ secrets.DOCKER_USERNAME }}/fsd2-experiment16-frontend:${{ github.sha }}
