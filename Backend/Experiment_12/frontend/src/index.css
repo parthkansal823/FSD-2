@@ -1,0 +1,142 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Root Theme */
+:root {
+  --bg: #0f172a;
+  --card: rgba(255, 255, 255, 0.05);
+  --primary: #6366f1;
+  --primary-hover: #4f46e5;
+  --text: #e2e8f0;
+  --subtext: #94a3b8;
+  --border: rgba(255, 255, 255, 0.1);
+}
+
+/* Body */
+body {
+  font-family: "Inter", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+}
+
+/* Card (Glass Effect) */
+.card {
+  background: var(--card);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 20px;
+}
+
+/* Heading */
+h2 {
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+/* Chat Area */
+.chat-box {
+  height: 300px;
+  overflow-y: auto;
+  margin-bottom: 15px;
+  padding-right: 5px;
+}
+
+/* Message */
+.message {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 8px 12px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+/* Input Row */
+.input-row {
+  display: flex;
+  gap: 10px;
+}
+
+/* Input */
+input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text);
+  outline: none;
+}
+
+/* Input Focus */
+input:focus {
+  border-color: var(--primary);
+}
+
+/* Button */
+button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 10px;
+  background: var(--primary);
+  color: white;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+/* Button Hover */
+button:hover {
+  background: var(--primary-hover);
+}
+
+/* Scrollbar (clean look) */
+.chat-box::-webkit-scrollbar {
+  width: 5px;
+}
+
+.chat-box::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 10px;
+}
+
+/* Chat message alignment */
+.message {
+  display: flex;
+  flex-direction: column;
+  max-width: 70%;
+}
+
+/* Own message */
+.message.self {
+  align-self: flex-end;
+  background: #6366f1;
+  color: white;
+}
+
+/* Other message */
+.message.other {
+  align-self: flex-start;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* Time */
+.message small {
+  font-size: 10px;
+  margin-top: 4px;
+  opacity: 0.7;
+}
