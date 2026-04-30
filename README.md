@@ -1,4 +1,4 @@
-# Full Stack Development II — Semester 6
+# Full Stack Development — Semester 6
 
 **Parth Kansal · 23BIS70035**
 
